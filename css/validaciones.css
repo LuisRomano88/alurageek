@@ -1,0 +1,99 @@
+/* ---- validaciones ---- */
+
+
+#contacto-span-errorNombre, #contacto-span-errorMensaje, #login-span-errorEmail, #login-span-errorPassword, #producto-span-errorImg, #producto-span-select, #producto-span-nombre, #producto-span-precio, #producto-span-descripcion{
+    font-size: 0.8rem;
+    color: red;
+    font-weight: 200;
+}
+
+#errorCamposVacios{
+    display: none;
+    height: 50px;
+    color: yellow;
+}
+
+#errorUsuario{
+    display: none;
+    height: 50px;
+    color: yellow;
+}
+
+#errorCamposVacios p{
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+#errorUsuario p{
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+
+
+
+
+#mensajeBienvenidos{
+    display: none;
+    height: 50px;
+}
+
+.mensaje__bienvenidos-p{
+    color: green;
+    font-size: 1.25rem;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 700;
+}
+
+#camposCorrectos{
+    display: none;
+    height: 50px;
+
+}
+#camposCorrectos p {
+    color: green;
+    font-size: 1.25rem;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+
+/* --- vista tablets --- */
+
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 810px) {
+   
+    #errorCamposVacios p{
+
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    #camposCorrectos p {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+}
+
+/* --- vista mobile --- */
+
+@media only screen and (max-device-width: 480px){
+    #errorCamposVacios p{
+        font-size: 0.9rem;
+        font-weight: 300;
+    }
+    #camposCorrectos p {
+        font-size: 0.9rem;
+        font-weight: 300;
+    }
+}

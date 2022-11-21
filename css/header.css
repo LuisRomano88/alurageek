@@ -1,0 +1,100 @@
+
+.cabecera {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.cabecera__logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cabecera__logo-img {
+    width: 50px;
+    height: 50px;
+}
+
+.cabecera__busqueda {
+    display: flex;
+    flex-direction: row;
+    border-radius: 50px;
+    justify-content: center;
+    background-color: #F5F5F5;
+    padding: 10px;
+}
+
+span i{
+    margin-top: 9px;
+}
+
+.cabecera__busqueda input {
+
+    width: 390px;
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+    font-size: 0.9rem;
+    background-color: #F5F5F5;
+}
+
+.button__login-btn {
+    width: 100px;
+    height: 40px;
+    background-color: #FFFFFF;
+    border: 1px solid #2A7AE4;
+    color: #2A7AE4;
+}
+
+
+/* --- vista tablets --- */
+
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 810px) {
+
+    .cabecera {
+        justify-content: space-around;
+    }
+
+    .cabecera__logo-img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .cabecera__busqueda {
+        justify-content: space-around;
+    }
+
+    .cabecera__busqueda input {
+        width: 75%;
+        font-size: 0.7rem;
+    }
+
+}
+
+/* --- vista mobile --- */
+
+@media only screen and (max-device-width: 480px) {
+
+    .cabecera__busqueda input {
+        display: none;
+    }
+
+    .cabecera__logo-img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .button__login-btn {
+        order: 2;
+    }
+
+    .cabecera__busqueda {
+        order: 3;
+        background-color: #FFFFFF;
+    }
+}

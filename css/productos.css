@@ -1,0 +1,119 @@
+.productos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px 0 50px;
+    
+}
+
+.productos__titulo {
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 38px;
+    color: #464646;
+
+}
+
+a {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 19px;
+    color: #2A7AE4;
+    text-decoration: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    margin: 0 auto;
+    gap: 1rem;
+    margin: 0 50px 0 50px;
+    padding-bottom: 20px;
+    
+}
+
+.grid-item:hover{
+    box-shadow: 0px 0px 3px 5px rgba(186,186,186,0.5);
+
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.card__titulo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 16px;
+    color: #464646;
+}
+
+.card__precio {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 19px;
+    color: #464646;
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 810px) {
+
+    .productos__titulo {
+        font-size: 1.375rem;
+    }
+    .grid-container {
+        column-gap: 10px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .grid-container :nth-child(5){
+        display: none;
+    }
+    .grid-container :nth-child(6){
+        display: none;
+    }
+
+}
+
+
+
+@media only screen and (max-device-width: 480px) {
+
+    .productos {
+        margin: 0 10px 0 20px;
+    }
+    .productos__titulo {
+        font-size: 1.375rem;
+    }
+    .grid-container {
+        column-gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+
+    a {
+        font-weight: 200;
+        font-size: 0.8rem;
+    }
+
+    .grid-container :nth-child(5){
+        display: none;
+    }
+    .grid-container :nth-child(6){
+        display: none;
+    }
+
+
+}

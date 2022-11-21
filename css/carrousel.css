@@ -1,0 +1,85 @@
+
+
+.carrousel{
+    display: flex;
+    height: 350px;
+    background-image: url(../Imagenes/cabecera/hero.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+ 
+}
+
+.carrousel__titulos{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    color: #FFFFFF;
+    padding: 10px;
+    margin: 100px 50px 0 50px;
+    background: hsla(0,0%,100%,0.4);
+    height: 215px;
+}
+
+.carrousel__titulos h2{
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.25rem;
+    color: #FFFFFF;
+    margin-bottom: 1px;
+}
+
+.carrousel__titulos h4{
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.375rem;
+    color: #FFFFFF;
+    margin-bottom: 1px;
+    
+}
+
+.carrousel__titulos button {
+    background-color: #2A7AE4;
+    color: #FFFFFF;
+    width: 150px;
+    height: 40px;
+    margin-top: 10px;
+    border: 1px solid #2A7AE4;
+}
+
+.carrousel__titulos button a{
+    color: #FFFFFF;
+    font-size: 0.9rem;
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 810px){
+    .carrousel__titulos h2{
+        font-size: 1.375rem;
+    }
+    .carrousel__titulos h4{
+        font-size: 0.8rem;        
+    }
+    .carrousel__titulos{
+        height: 150px;
+    }
+}
+
+
+
+@media only screen and (max-device-width: 480px){
+
+    .carrousel__titulos h2{
+        font-size: 1.375rem;
+    }
+
+    .carrousel__titulos h4{
+        font-size: 0.8rem;        
+    }
+
+
+  
+}

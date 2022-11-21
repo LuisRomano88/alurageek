@@ -1,0 +1,69 @@
+.consolas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px 0 50px;
+    
+}
+
+.consolas__titulo {
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 38px;
+    color: #464646;
+
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 810px) {
+
+    .consolas__titulo {
+        font-size: 1.375rem;
+    }
+    .grid-container {
+        column-gap: 10px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .grid-container :nth-child(5){
+        display: none;
+    }
+    .grid-container :nth-child(6){
+        display: none;
+    }
+
+}
+
+
+
+@media only screen and (max-device-width: 480px) {
+
+    .consolas {
+        margin: 0 10px 0 20px;
+    }
+    .consolas__titulo {
+        font-size: 1,375rem;
+    }
+    .grid-container {
+        column-gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+
+    a {
+        font-weight: 200;
+        font-size: 0.8rem;
+    }
+
+    .grid-container :nth-child(5){
+        display: none;
+    }
+    .grid-container :nth-child(6){
+        display: none;
+    }
+
+
+}
