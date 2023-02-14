@@ -1,0 +1,49 @@
+.tabla__productos{
+   
+    margin-left: 15%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+}
+
+.thead tr th{
+    background-color: cornsilk;
+    border-bottom: 1px solid #5e5c64;
+    padding: 30px;
+}
+
+.tbody tr td{
+    background-color: #ededed;
+    padding: 30px;
+}
+
+
+.tabla__button-nuevo{
+    width: 200px;
+    height: 50px;
+    background-color: #2A7AE4;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: #2A7AE4;
+}
+
+.tabla__button-editar{
+    width: 100px;
+    height: 50px;
+    background-color: #518b43;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: #518b43;
+}
+
+.tabla__button-eliminar{
+    width: 100px;
+    height: 50px;
+    background-color: #b11610;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: #b11610;
+}

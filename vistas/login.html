@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/validaciones.css">
+
+    <title>Login</title>
+</head>
+<body>
+
+    <!-- Cabecera -->
+    <header>
+        <div class="cabecera">
+            <div class="cabecera__logo">
+                <img  class="cabecera__logo-img" src="../Imagenes/cabecera/joystick_icon_215064.ico" alt="logo">
+                <img src="../Imagenes/cabecera/AluraGeek.png" alt="">
+                <img src="../Imagenes/cabecera/AluraGeek2.png" alt="">
+            </div>
+            <div class="cabecera__busqueda">
+                <input type="text" placeholder="¿Qué deseas buscar?">
+                <span>
+                    <i class="fa fa-search"></i>
+                </span>
+            </div>
+        </div>
+    </header>
+
+        <!-- Formulario -->
+        <div class="login__formulario">
+
+            <form class="login__formulario-form" id="form-login" action="" method="post" target="_blank">          
+                <h3>Iniciar Sesion</h3>
+                
+                    <div class="formulario__errorCamposVacios" id="errorCamposVacios">
+                        <p class="formulario__errorCamposVacios-p">Debe completar todos los campos</p>
+                    </div>
+
+                    <div class="formulario__errorUsuario" id="errorUsuario">
+                        <p class="formulario__errorUsuario-p">Usuario no registrado</p>
+                    </div>
+
+                    <input type="text" id="input-correo" name="email" placeholder=" Escriba su correo electrónico ">
+                    <span class="contacto__formulario-span" id="login-span-errorEmail"></span>
+                    <input type="password" id="input-contraseña" name="password" placeholder=" Escriba su contraseña ">
+                    <span class="contacto__formulario-span" id="login-span-errorPassword"></span>
+                    <button type="submit" id="btn-login" >Entrar</button>
+            </form>
+        </div>
+
+   <!-- Contacto -->
+        <section class="contacto">
+    <div class="contacto__logo">
+        <img  class="cabecera__logo-img" src="../Imagenes/cabecera/joystick_icon_215064.ico" alt="logo">
+        <img src="../Imagenes/cabecera/AluraGeek.png" alt="">
+        <img src="../Imagenes/cabecera/AluraGeek2.png" alt="">
+    </div>
+    <div class="contacto__info">
+        <ul class="contacto__info-ul">
+            <li class="contacto__info-li">Quienes somos</li>
+            <li class="contacto__info-li">Politicas de privacidad</li>
+            <li class="contacto__info-li">Programa de fidelidad</li>
+            <li class="contacto__info-li">Nuestras Tiendas</li>
+            <li class="contacto__info-li">Quiero ser franquiciado</li>
+            <li class="contacto__info-li">Anuncie aqui</li>
+        </ul>
+    </div>
+    <div class="contacto__formulario">
+        <form class="contacto__formulario-form" id="contacto-form" action="" method="post" target="_blank">
+            <h3>Hable con nosotros</h3>
+            <div class="formulario__errorCamposVacios" id="errorCamposVacios">
+                <p class="formulario__errorCamposVacios-p">Debe completar todos los campos</p>
+            </div>
+    
+            <div class="formulario__camposCorrectos" id="camposCorrectos">
+                <p class="formulario__camposCorrectos-p">¡Gracias por comunicarte! 
+                </p>
+            </div>
+            <input type="text" id="input-nombre" name="nombre" placeholder="Nombre">
+            <span class="contacto__formulario-span" id="contacto-span-errorNombre"></span>
+            <input type="text" name="mensaje" id="input-mensaje" placeholder="Escribe tu mensaje" ></input>
+            <span class="contacto__formulario-span" id="contacto-span-errorMensaje"></span>
+            <button type="submit" id="btn-enviar-mensaje">Enviar mensaje</button>
+        </form>
+    </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p class="footer__parrafo">Diseñado por Leandro Romano</p>
+            <p class="footer__parrafo">2022</p>
+            <div class="footer__iconos">
+                <div class="footer__iconos-redes">
+                    <a href="https://github.com/rockmano88" target="_blank">
+                        <img src="../Imagenes/iconos/github-logo.ico" alt="">
+                    </a>
+                </div>
+                <div class="footer__iconos-redes">
+                    <a href="https://www.linkedin.com/in/luis-romano-a4a953180/" target="_blank">
+                        <img src="../Imagenes/iconos/linkedin-logo.ico" alt="">
+                    </a>
+        
+                </div>
+                <div class="footer__iconos-redes">
+                    <a href="https://wa.me/542615958789" target="_blank">
+                        <img src="../Imagenes/iconos/whatsapp-logo.ico" alt="">
+                    </a>
+                </div>
+            </div>
+        </footer>
+        
+<script src="../js/validaciones-login.js"></script>
+<script src="../js/validaciones-contacto.js"></script>
+</body>
+</html>

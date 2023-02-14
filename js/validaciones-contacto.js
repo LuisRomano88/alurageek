@@ -1,6 +1,4 @@
-
 /*
-
 const form = document.querySelector('#contacto-form');
 
 const btnEnviar = document.querySelector('#btn-enviar-mensaje');
@@ -69,5 +67,4 @@ form.addEventListener("submit", (e)=>{
 btnEnviar.addEventListener("click", ()=>{
     validarFormContacto();
 });
-
 */

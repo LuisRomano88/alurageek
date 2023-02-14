@@ -1,3 +1,8 @@
+body{
+    background-color: #E5E5E5;
+}
+
+
 .form-container{
     background: #E5E5E5;
     display: flex;

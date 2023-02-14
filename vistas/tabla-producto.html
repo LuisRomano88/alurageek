@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/tabla-productos.css">
+    <title>Tabla de productos</title>
+</head>
+<body>
+    <!-- Cabecera -->
+    <header>
+        <div class="cabecera">
+            <div class="cabecera__logo">
+                <img  class="cabecera__logo-img" src="../Imagenes/cabecera/joystick_icon_215064.ico" alt="logo">
+                <img src="../Imagenes/cabecera/AluraGeek.png" alt="">
+                <img src="../Imagenes/cabecera/AluraGeek2.png" alt="">
+            </div>
+            <div class="cabecera__busqueda">
+                <input type="text" placeholder="¿Qué deseas buscar?">
+                <span>
+                    <i class="fa fa-search"></i>
+                </span>
+            </div>
+            <div class="button__login">
+                <button class="button__login-btn"><a href="login.html">Login</a></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Tabla Productos -->
+
+    <table class="tabla__productos">
+        <thead class="thead">
+            <tr>
+                <th>Imagen</th>
+                <th>Categoria</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Descripcion</th>
+                <th colspan="2"><button class="tabla__button-nuevo" id="btn-agregar-producto">Agregar productos</button></th>
+            </tr>
+        </thead>
+        <tbody class="tbody" id="datos-tabla">
+            
+        </tbody>
+    </table>
+
+    <!-- Footer -->
+    <footer>
+        <p class="footer__parrafo">Diseñado por Leandro Romano</p>
+        <p class="footer__parrafo">2022</p>
+        <div class="footer__iconos">
+            <div class="footer__iconos-redes">
+                <a href="https://github.com/rockmano88" target="_blank">
+                    <img src="../Imagenes/iconos/github-logo.ico" alt="">
+                </a>
+            </div>
+            <div class="footer__iconos-redes">
+                <a href="https://www.linkedin.com/in/luis-romano-a4a953180/" target="_blank">
+                    <img src="../Imagenes/iconos/linkedin-logo.ico" alt="">
+                </a>
+    
+            </div>
+            <div class="footer__iconos-redes">
+                <a href="https://wa.me/542615958789" target="_blank">
+                    <img src="../Imagenes/iconos/whatsapp-logo.ico" alt="">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="../controllers/productos-controllers.js"></script>
+    <script type="module" src="../controllers/actualizar-controller.js"></script>
+    
+</body>
+</html>

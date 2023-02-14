@@ -1,3 +1,7 @@
+body{
+    background-color: #E5E5E5;
+}
+
 
 .cabecera {
     height: 100px;
@@ -6,6 +10,7 @@
     justify-content: space-around;
     align-items: center;
     padding: 20px;
+    background-color: #FFFFFF;
 }
 
 .cabecera__logo {
